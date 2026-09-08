@@ -1,0 +1,27 @@
+{
+    "name": "smit-backend/laravel-stream-chat-llm",
+    "description": "Real-time SSE event-stream chat component for Laravel Livewire and React, integrated with streaming LLM providers.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "smit-backend",
+            "homepage": "https://github.com/smit-backend"
+        }
+    ],
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "SmitBackend\\StreamLLM\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SmitBackend\\StreamLLM\\PackageServiceProvider"
+            ]
+        }
+    }
+}
